@@ -37,4 +37,19 @@ print(result)  # Output: 15
 
 ```nonlocal``` similar to static variable
 
+## **ex02**
 
+`wrappers/decorator`
+
+- modify the behavior of another function/class/object
+- e.g. @my_decorator
+- Common pattern for decorators:
+	* nested function
+
+```text
+def tictoc(func):
+	def wrapper():
+		t1 = time.time()
+		function
+
+```
