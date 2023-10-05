@@ -31,6 +31,7 @@ def handle_quartile(args, value, args_length):
 
 
 def handle_var(args, value, args_length, count):
+    '''Handle var'''
     mean = sum(args) / args_length
     difference = []
     for i in args:
@@ -46,6 +47,7 @@ def handle_var(args, value, args_length, count):
 
 
 def handle_std(args, value, args_length, count):
+    '''Handle std'''
     outcome = handle_var(args, value, args_length, count)
     outcome = outcome ** 0.5
     print("std :", outcome)
