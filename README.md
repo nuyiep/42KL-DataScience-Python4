@@ -46,10 +46,27 @@ print(result)  # Output: 15
 - Common pattern for decorators:
 	* nested function
 
-```text
-def tictoc(func):
-	def wrapper():
-		t1 = time.time()
-		function
+## **ex03**
 
-```
+`@dataclass decorator`
+
+- simplifies the creation of a class for storing data
+- automatically handling initialization, string representation, and equality comparison
+- \_\_init__(), \_\_repr__(), \_\_eq__()
+
+`field() function`
+
+- specify additional metadata and default values for fields when creating a data class
+
+`_post_init_()`
+
+- perform additional operations or customization after the object has been initialized
+- call automatically immediately after the \_\_init__()
+
+`default factory (field)`
+
+- specify a factory function that generates default values for a field in a data class
+
+`init (field)`
+
+- used to control whether a field should be included in the automatically generated \_\_init__() method
