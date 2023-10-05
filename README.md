@@ -21,7 +21,7 @@ Data Oriented Design
 
 `closure`
 
-```text
+```python
 def outer_function(x):
     # This is the outer function
     def inner_function(y):
