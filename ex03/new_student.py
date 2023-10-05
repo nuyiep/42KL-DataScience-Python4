@@ -14,7 +14,13 @@ class Student:
 	'''Student class'''
 	name: str
 	surname: str
-	active: bool
+	active: bool = field(default=False)
+	login: str = field(init=False)
+	id: str = field(default_factory=generate_id, init=False)
 	
+	def __post_init__(self):
+		'''Post init'''
+		self.login = self.name[0] + self.surname
 
+		
 
